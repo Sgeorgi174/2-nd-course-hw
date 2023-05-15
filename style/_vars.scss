@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+$index: calc(1vh + 1vw);
+$colorWhite: #fff;
+$colorRed: rgba(156, 3, 50, 1);
+$colorBrightRed : rgba(235, 68, 63, 1);
+$colorDarkBlue: rgba(0, 9, 21, 1);
+$colorLightBlue: rgba(68, 210, 255, 1);
+$textColor: $colorWhite;
+$btnColor: $colorRed;
+$btnHoverColor: $colorBrightRed;
+$borderColor: $colorLightBlue;
+$backgroundColor: $colorDarkBlue;

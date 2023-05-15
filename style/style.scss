@@ -1,5 +1,127 @@
+@import 'vars';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+    color: $textColor;
+    background-color: $backgroundColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.header {
+    background-image: url(../img/header__back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__heading {
+        margin-top: 217px;
+        margin-bottom: 493px;
+        max-width: 750px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78.02px;
+    }
+
+    &__text {
+        margin-top: 32px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    &__text span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    &__btn {
+        margin-top: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 234px;
+        height: 48px;
+        background: $btnColor;
+        border-radius: 30px;
+        color: $textColor;
+        &:hover {
+            background: $btnHoverColor;
+        }
+    }
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 128px;
+    margin-top: 128px;
+    &__box {
+        width: 378px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 0  0 32px 32px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        &:hover {
+            outline: 1px solid $borderColor;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &_1 {
+            background-image: url(../img/card__1.jpg);
+        }
+
+        &_2 {
+            background-image: url(../img/card__2.jpg);
+        }
+
+        &_3 {
+            background-image: url(../img/card__3.jpg);
+        }
+    }
 }
