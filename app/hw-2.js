@@ -40,8 +40,8 @@ num -= 1;
 alert(num);
 
 // TASK 8
-const age = Number(prompt('Сколько вам лет?'))
-alert(age)
+const age = Number(prompt('Сколько вам лет?'));
+alert(age);
 
 // TASK 9.0
 const user = {
