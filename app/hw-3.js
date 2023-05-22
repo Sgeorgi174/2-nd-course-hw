@@ -24,14 +24,14 @@ if (c > 0 && c < 10) {
 // TAKS 3
 let d = 17;
 let e = 101;
-(e > 100 || d > 100) ? console.log('Верно') : console.log('Не верно')
+console.log((e > 100 || d > 100) ? 'Верно' : 'Не верно')
 
 
 //TASK 4
 let a = '2';
 let b = '3';
 // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже: 
-alert(+a + +b);
+alert(Number(a) + Number(b));
 
 
 // TASK 5 (1 вариант)
@@ -120,9 +120,9 @@ const clientWindows = 'Приложение для Windows пока не гот�
 if (navigator.userAgent.includes('Windows')) {
     console.log(clientWindows);
 } else if (navigator.userAgent.includes('Android')) {
-    clientDeviceYear >= 2015 ? console.log(clientAndroid) : console.log(clientAndroidLite);
+    console.log((clientDeviceYear >= 2015) ? clientAndroid : clientAndroidLite);
 } else if (navigator.userAgent.includes('iPhone')) { //Проверил useragent своего телефона, должно точно работать))
-    clientDeviceYear >= 2015 ? console.log(clientIOS) : console.log(clientIOSLite);
+    console.log((clientDeviceYear >= 2015) ? clientIOS : clientIOSLite);
 }
 
 
