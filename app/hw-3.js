@@ -97,16 +97,11 @@ if (monthNumber > 0 && monthNumber <= 12) {
 
 //TASK 7
 let number = prompt('Пожалуйста, введите любое число')
-if (+number == number) {
-    switch (+number % 2){
-        case 0:
-            alert('Число четное')
-            break;
-        default:
-            alert('Число не четное')
-            break;
-    }
+if (isNaN(number)) {
+} else {
+    alert((number % 2) === 0 ? 'Число четное' : 'Число не четное') 
 }
+
 
 
 //TASK 8 and 9 (вариант 1)
