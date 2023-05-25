@@ -48,10 +48,8 @@ do {
 } while (i <= 5);
 
 //TASK 3
-for (let i = 0; i <= 22; i++) {
-    if (i >= 7 && i <= 22) {
-        console.log(i);
-    }
+for (let i = 7; i <= 22; i++) {
+    console.log(i);    
 }
 
 //TASK 4
