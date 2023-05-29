@@ -87,22 +87,21 @@ const summer = 'Лето';
 const autumn = 'Осень';
 
 //ВАРИАНТ 1
-// работа кнопки после клика
-firstGameBtn.addEventListener('click', () => {
 
-    let userAnswear = Number(prompt('Введите номер месяца'))
+// описание функции
+function playSeasons (answer) {
 
-    if (userAnswear > 0 && userAnswear <= 12) {
-        if (userAnswear === 12 || userAnswear === 1 || userAnswear === 2) {
+    if (answer > 0 && answer <= 12) {
+        if (answer === 12 || answer === 1 || answer === 2) {
             console.log(winter);
             return winter;
-        } else if (userAnswear === 3 || userAnswear === 4 || userAnswear === 5) {
+        } else if (answer === 3 || answer === 4 || answer === 5) {
             console.log(spring);
             return spring;
-        } else if (userAnswear === 6 || userAnswear === 7 || userAnswear === 8) {
+        } else if (answer === 6 || answer === 7 || answer === 8) {
             console.log(summer);
             return summer;
-        } else if (userAnswear === 9 || userAnswear === 10 || userAnswear === 11) {
+        } else if (answer === 9 || answer === 10 || answer === 11) {
             console.log(autumn);
             return autumn;
         }
@@ -110,7 +109,15 @@ firstGameBtn.addEventListener('click', () => {
         console.log(error);
         return error
     }
+}
+
+// работа кнопки после клика
+firstGameBtn.addEventListener('click', () => {
+    let userAnswear = Number(prompt('Введите номер месяца'))
+    playSeasons(userAnswear)
 })
+
+
 
 // //ВАРИАНТ 2
 // firstGameBtn.addEventListener('click', () => {
