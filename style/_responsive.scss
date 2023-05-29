@@ -7,6 +7,23 @@
     .content__box {
         width: 323px;
     }
+
+    .game-1 {
+        flex-direction: column;
+        gap: 64px;
+
+        &__left {
+            align-items: center;
+
+            &-text  {
+                text-align: center;
+            }
+
+            &-title {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1023px){
@@ -26,6 +43,23 @@
 
     .content__box {
         width: 323px;
+    }
+
+    .game-1 {
+        flex-direction: column;
+        gap: 64px;
+
+        &__left {
+            align-items: center;
+
+            &-text  {
+                text-align: center;
+            }
+
+            &-title {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -62,6 +96,23 @@
     .content {
         justify-content: center;
         gap: 32px;
+    }
+
+    .game-1 {
+        flex-direction: column;
+        gap: 64px;
+
+        &__left {
+            align-items: center;
+
+            &-text  {
+                text-align: center;
+            }
+
+            &-title {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -103,5 +154,34 @@
 
     .content__box {
         width: 343px;
+    }
+
+    .games {
+        margin-bottom: 85px;
+    }
+
+    .game-1 {
+        flex-direction: column;
+        gap: 64px;
+
+        &__left {
+            align-items: center;
+
+            &-text  {
+                text-align: center;
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            &-title {
+                text-align: center;
+                font-size: 32px;
+                line-height: 39px;
+            }
+        }
+
+        &__right-img {
+            width: 344px;
+        }
     }
 }

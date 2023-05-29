@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 .center {
@@ -68,6 +69,7 @@ a {
   background: rgb(156, 3, 50);
   border-radius: 30px;
   color: #fff;
+  transition: background-color 0.3s;
 }
 .header__btn:hover {
   background: rgb(235, 68, 63);
@@ -112,6 +114,47 @@ a {
   background-image: url(../img/card__3.jpg);
 }
 
+.games {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 282px;
+}
+
+.game-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.game-1__left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 584px;
+}
+.game-1__left-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
+.game-1__left-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+}
+.game-1__left-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: rgb(156, 3, 50);
+  transition: background-color 0.3s;
+}
+.game-1__left-btn:hover {
+  background-color: rgb(235, 68, 63);
+}
+
 @media (min-width: 1024px) and (max-width: 1250px) {
   .center {
     padding-left: calc(50% - 500px);
@@ -119,6 +162,19 @@ a {
   }
   .content__box {
     width: 323px;
+  }
+  .game-1 {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .game-1__left {
+    align-items: center;
+  }
+  .game-1__left-text {
+    text-align: center;
+  }
+  .game-1__left-title {
+    text-align: center;
   }
 }
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -135,6 +191,19 @@ a {
   }
   .content__box {
     width: 323px;
+  }
+  .game-1 {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .game-1__left {
+    align-items: center;
+  }
+  .game-1__left-text {
+    text-align: center;
+  }
+  .game-1__left-title {
+    text-align: center;
   }
 }
 @media (min-width: 520px) and (max-width: 768px) {
@@ -165,6 +234,19 @@ a {
   .content {
     justify-content: center;
     gap: 32px;
+  }
+  .game-1 {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .game-1__left {
+    align-items: center;
+  }
+  .game-1__left-text {
+    text-align: center;
+  }
+  .game-1__left-title {
+    text-align: center;
   }
 }
 @media (max-width: 519px) {
@@ -199,5 +281,28 @@ a {
   }
   .content__box {
     width: 343px;
+  }
+  .games {
+    margin-bottom: 85px;
+  }
+  .game-1 {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .game-1__left {
+    align-items: center;
+  }
+  .game-1__left-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game-1__left-title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game-1__right-img {
+    width: 344px;
   }
 }/*# sourceMappingURL=style.css.map */
