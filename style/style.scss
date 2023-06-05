@@ -133,9 +133,10 @@ a {
     display: flex;
     flex-direction: column;
     margin-bottom: 282px;
+    gap: 472px;
 }
 
-.game-1 {
+.game {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,4 +176,7 @@ a {
     }
 }
 
+.game_2 {
+    flex-direction: row-reverse
+}
 @import 'responsive';
