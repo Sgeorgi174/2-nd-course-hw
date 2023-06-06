@@ -118,30 +118,31 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 282px;
+  gap: 472px;
 }
 
-.game-1 {
+.game {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.game-1__left {
+.game__left {
   display: flex;
   flex-direction: column;
   gap: 32px;
   max-width: 584px;
 }
-.game-1__left-title {
+.game__left-title {
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
 }
-.game-1__left-text {
+.game__left-text {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
 }
-.game-1__left-btn {
+.game__left-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,8 +152,12 @@ a {
   background-color: rgb(156, 3, 50);
   transition: background-color 0.3s;
 }
-.game-1__left-btn:hover {
+.game__left-btn:hover {
   background-color: rgb(235, 68, 63);
+}
+
+.game_2 {
+  flex-direction: row-reverse;
 }
 
 @media (min-width: 1024px) and (max-width: 1250px) {
@@ -163,17 +168,17 @@ a {
   .content__box {
     width: 323px;
   }
-  .game-1 {
+  .game {
     flex-direction: column;
     gap: 64px;
   }
-  .game-1__left {
+  .game__left {
     align-items: center;
   }
-  .game-1__left-text {
+  .game__left-text {
     text-align: center;
   }
-  .game-1__left-title {
+  .game__left-title {
     text-align: center;
   }
 }
@@ -192,17 +197,17 @@ a {
   .content__box {
     width: 323px;
   }
-  .game-1 {
+  .game {
     flex-direction: column;
     gap: 64px;
   }
-  .game-1__left {
+  .game__left {
     align-items: center;
   }
-  .game-1__left-text {
+  .game__left-text {
     text-align: center;
   }
-  .game-1__left-title {
+  .game__left-title {
     text-align: center;
   }
 }
@@ -235,17 +240,20 @@ a {
     justify-content: center;
     gap: 32px;
   }
-  .game-1 {
+  .games {
+    gap: 250px;
+  }
+  .game {
     flex-direction: column;
     gap: 64px;
   }
-  .game-1__left {
+  .game__left {
     align-items: center;
   }
-  .game-1__left-text {
+  .game__left-text {
     text-align: center;
   }
-  .game-1__left-title {
+  .game__left-title {
     text-align: center;
   }
 }
@@ -284,25 +292,26 @@ a {
   }
   .games {
     margin-bottom: 85px;
+    gap: 136px;
   }
-  .game-1 {
+  .game {
     flex-direction: column;
     gap: 64px;
   }
-  .game-1__left {
+  .game__left {
     align-items: center;
   }
-  .game-1__left-text {
+  .game__left-text {
     text-align: center;
     font-size: 14px;
     line-height: 22px;
   }
-  .game-1__left-title {
+  .game__left-title {
     text-align: center;
     font-size: 32px;
     line-height: 39px;
   }
-  .game-1__right-img {
+  .game__right-img {
     width: 344px;
   }
 }/*# sourceMappingURL=style.css.map */
