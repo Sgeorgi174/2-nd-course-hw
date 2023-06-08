@@ -47,44 +47,44 @@
 
 // //----------------------------------//
 
-// // TASK 1
-// const people = [
-//     { name: 'Глеб', age: 29 },
-//     { name: 'Анна', age: 17 },
-//     { name: 'Олег', age: 7 },
-//     { name: 'Оксана', age: 47 }
-//  ];
+// TASK 1
+const people = [
+    { name: 'Глеб', age: 29 },
+    { name: 'Анна', age: 17 },
+    { name: 'Олег', age: 7 },
+    { name: 'Оксана', age: 47 }
+ ];
  
-//  console.log(people.sort((x, y) => x.age - y.age));
+ console.log(people.sort((x, y) => x.age - y.age));
 
-//  // TASK 2
-//  const somePeople = [
-//     {name: 'Глеб', gender: 'male'},
-//     {name: 'Анна', gender: 'female'},
-//     {name: 'Олег', gender: 'male'},
-//     {name: 'Оксана', gender: 'female'}
-//  ];
+ // TASK 2
+ const somePeople = [
+    {name: 'Глеб', gender: 'male'},
+    {name: 'Анна', gender: 'female'},
+    {name: 'Олег', gender: 'male'},
+    {name: 'Оксана', gender: 'female'}
+ ];
 
-// function isPositive(arr) {
-//    return arr.filter(el => el > 1)
-//  }
+function isPositive(arr) {
+   return arr.filter(el => el > 1)
+ }
 
-// function isMale(arr) {
-//     return arr.filter(el => el.gender == 'male')
-//  }
-// function filter(arr, callback) {
-//    return callback(arr)
-// }
+function isMale(arr) {
+    return arr.filter(el => el.gender == 'male')
+ }
+function filter(arr, callback) {
+   return callback(arr)
+}
 
-// console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
-// console.log(filter(somePeople, isMale));
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+console.log(filter(somePeople, isMale));
 
 
-// //TASK 3
-// const showDate = () => console.log(new Date);
-// const endTimer = () => console.log(`30 секунд прошло`);
-// let timer = setInterval(showDate, 1000 * 3)
-// setTimeout(() => { clearInterval(timer); endTimer(); }, 1000 * 30);
+//TASK 3
+const showDate = () => console.log(new Date);
+const endTimer = () => console.log(`30 секунд прошло`);
+let timer = setInterval(showDate, 1000 * 3)
+setTimeout(() => { clearInterval(timer); endTimer(); }, 1000 * 30);
 
 // //TASK 4
 // function delayForSecond(callback) {
